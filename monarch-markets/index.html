@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Monarch Markets — Market intelligence without the noise</title>
+  <meta name="description" content="Monarch is a market intelligence platform for African equities: delayed quotes, rule-based alerts, and a clean desk that stays out of the way." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230a0e12'/%3E%3Cpath d='M10 46 22 28l10 9 12-17 10 8' fill='none' stroke='%23ffb000' stroke-width='4'/%3E%3Crect x='10' y='50' width='44' height='2' fill='%2322d3ee'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="head" data-head>
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 28 28" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 22 9 12l6 5 7-10 4 4" />
+          <path d="M3 25h22" />
+        </svg>
+      </span>
+      <span class="brand__name">MONARCH</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#desk">The desk</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#security">Security</a>
+    </nav>
+    <a class="head__cta" href="#access">Request access</a>
+    <button class="menu" type="button" aria-expanded="false" aria-controls="menu-panel">
+      <span></span><span></span><span></span><span class="sr-only">Menu</span>
+    </button>
+    <nav class="menu-panel" id="menu-panel" hidden aria-label="Mobile">
+      <a href="#desk">The desk</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#security">Security</a>
+      <a href="#access">Request access</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="status"><span class="status__dot"></span> Market data delayed 30 min &nbsp;·&nbsp; Lagos / NGX</p>
+        <h1>Market intelligence<br /><span>without the noise.</span></h1>
+        <p class="hero__lede">
+          A focused desk for African equities. Delayed quotes, rule-based alerts,
+          and a clean interface that shows you the number, not a story about it.
+        </p>
+        <div class="hero__actions">
+          <a class="btn" href="#access">Request access</a>
+          <a class="btn btn--line" href="#desk">See the desk</a>
+        </div>
+      </div>
+
+      <div class="console" id="desk" aria-label="Example Monarch market desk">
+        <div class="console__bar">
+          <span class="console__dot"></span><span class="console__dot"></span><span class="console__dot"></span>
+          <span class="console__title">MONARCH / WATCHLIST</span>
+          <span class="console__live">LIVE / DELAYED</span>
+        </div>
+        <div class="console__ticker" aria-hidden="true">
+          <div class="ticker" id="ticker">
+            <span>DANGCEM  <b class="up">+1.82%</b></span>
+            <span>MTNN  <b class="down">-0.64%</b></span>
+            <span>GTCO  <b class="up">+0.41%</b></span>
+            <span>ZENITH  <b class="up">+1.06%</b></span>
+            <span>BUACEMENT  <b class="down">-1.10%</b></span>
+            <span>SEPLAT  <b class="up">+2.34%</b></span>
+          </div>
+        </div>
+        <div class="console__body">
+          <div class="chart">
+            <div class="chart__head">
+              <div>
+                <span class="chart__sym">NGX / ALL SHARE</span>
+                <strong>98,412.06</strong>
+                <span class="up">+1.24% today</span>
+              </div>
+              <div class="chart__range"><span>1D</span><span class="is-on">1W</span><span>1M</span><span>1Y</span></div>
+            </div>
+            <svg viewBox="0 0 620 220" class="chart__svg" role="img" aria-label="Illustrative market chart">
+              <defs>
+                <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#ffb000" stop-opacity="0.28" />
+                  <stop offset="1" stop-color="#ffb000" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <g stroke="#1e2a33" stroke-width="1">
+                <line x1="0" y1="40" x2="620" y2="40" /><line x1="0" y1="90" x2="620" y2="90" />
+                <line x1="0" y1="140" x2="620" y2="140" /><line x1="0" y1="190" x2="620" y2="190" />
+              </g>
+              <path d="M0 168 60 154 120 160 180 132 240 140 300 108 360 118 420 84 480 92 540 58 620 44V220H0Z" fill="url(#fill)" />
+              <path d="M0 168 60 154 120 160 180 132 240 140 300 108 360 118 420 84 480 92 540 58 620 44" fill="none" stroke="#ffb000" stroke-width="2.5" />
+            </svg>
+          </div>
+          <div class="watch">
+            <div class="watch__head"><span>WATCHLIST</span><span>CHG</span></div>
+            <ul>
+              <li><span>DANGCEM</span><span class="up">+1.82%</span></li>
+              <li><span>MTNN</span><span class="down">-0.64%</span></li>
+              <li><span>GTCO</span><span class="up">+0.41%</span></li>
+              <li><span>ZENITH</span><span class="up">+1.06%</span></li>
+              <li><span>BUACEMENT</span><span class="down">-1.10%</span></li>
+              <li><span>SEPLAT</span><span class="up">+2.34%</span></li>
+            </ul>
+            <p class="watch__note">Illustrative data. Not investment advice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip">
+      <div class="wrap strip__inner">
+        <span>DELAYED QUOTES</span><span>RULE ALERTS</span><span>DIVIDEND CALENDAR</span><span>NEWS FILTER</span><span>NO BROKER LINK</span>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">01 / The product</p>
+          <h2>One desk. Four jobs.</h2>
+          <p>Monarch does not try to be a terminal, a broker, or a newsletter. It watches your list and tells you when a rule fires.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature reveal">
+            <span class="feature__n">01</span>
+            <h3>Watchlist</h3>
+            <p>Your symbols, with delayed quotes and the day's move. No feed, no autoplay video, no comments.</p>
+          </article>
+          <article class="feature reveal">
+            <span class="feature__n">02</span>
+            <h3>Rule alerts</h3>
+            <p>RSI bands, yield thresholds, price levels, and dividend dates. When a rule fires, you get one message.</p>
+          </article>
+          <article class="feature reveal">
+            <span class="feature__n">03</span>
+            <h3>News filter</h3>
+            <p>Only headlines that mention your companies, deduplicated and stripped of the usual noise.</p>
+          </article>
+          <article class="feature reveal">
+            <span class="feature__n">04</span>
+            <h3>Daily digest</h3>
+            <p>Everything that happened, in one short read at the close. No notifications after hours unless you ask.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="data">
+      <div class="wrap data__grid reveal">
+        <div>
+          <p class="kicker">02 / The data</p>
+          <h2>What you are looking at.</h2>
+          <p class="data__copy">
+            Quotes are delayed by at least thirty minutes and sourced from a
+            licensed provider. We do not connect to a broker and we do not place
+            orders. Monarch is context for your own decisions.
+          </p>
+          <ul class="data__list">
+            <li><span>Coverage</span><span>NGX listed equities</span></li>
+            <li><span>Delay</span><span>30 minutes minimum</span></li>
+            <li><span>History</span><span>Accumulated from daily polls</span></li>
+            <li><span>Broker link</span><span>None, by design</span></li>
+          </ul>
+        </div>
+        <div class="data__card" aria-hidden="true">
+          <div class="data__row"><span>OPEN</span><span>97,204.18</span></div>
+          <div class="data__row"><span>HIGH</span><span>98,640.92</span></div>
+          <div class="data__row"><span>LOW</span><span>97,102.44</span></div>
+          <div class="data__row"><span>VOLUME</span><span>421.8M</span></div>
+          <div class="data__row"><span>ADVANCERS</span><span class="up">28</span></div>
+          <div class="data__row"><span>DECLINERS</span><span class="down">11</span></div>
+          <div class="data__row"><span>UNCHANGED</span><span>7</span></div>
+          <p class="data__note">Illustrative snapshot. Values change.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">03 / Pricing</p>
+          <h2>Small, flat, honest.</h2>
+        </div>
+        <div class="plans">
+          <article class="plan reveal">
+            <div class="plan__top"><h3>Watch</h3><span>Free</span></div>
+            <p>One watchlist, delayed quotes, and the daily digest.</p>
+            <ul><li>Up to 10 symbols</li><li>Daily digest</li><li>One alert rule</li></ul>
+            <a class="btn btn--line" href="#access">Start free</a>
+          </article>
+          <article class="plan plan--featured reveal">
+            <div class="plan__top"><h3>Desk</h3><span>₦12,000 / mo</span></div>
+            <p>For people who check the market every day and want the rules to do it for them.</p>
+            <ul><li>Unlimited symbols</li><li>All alert rules</li><li>Dividend calendar</li><li>News filter</li></ul>
+            <a class="btn" href="#access">Request access</a>
+          </article>
+          <article class="plan reveal">
+            <div class="plan__top"><h3>Team</h3><span>Talk to us</span></div>
+            <p>Shared watchlists and a single digest for a small investment team.</p>
+            <ul><li>Up to 10 seats</li><li>Shared rules</li><li>Export</li></ul>
+            <a class="btn btn--line" href="#access">Talk to us</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="security" id="security">
+      <div class="wrap security__grid reveal">
+        <div>
+          <p class="kicker">04 / Security</p>
+          <h2>Boring on purpose.</h2>
+          <p class="security__copy">
+            No brokerage credentials, no order routing, no stored payment
+            instrument. Encryption in transit, scoped access, and an audit trail
+            for every account action.
+          </p>
+        </div>
+        <div class="security__points">
+          <div><span>01</span><p>TLS everywhere. No exceptions.</p></div>
+          <div><span>02</span><p>Read-only market data.</p></div>
+          <div><span>03</span><p>Scoped sessions and audit logs.</p></div>
+          <div><span>04</span><p>Delete your account and data on request.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="access" id="access">
+      <div class="wrap access__grid reveal">
+        <div>
+          <p class="kicker">05 / Access</p>
+          <h2>Get on the list.</h2>
+          <p class="access__copy">Monarch is in private beta. Tell us what you watch and we will send an invite when a seat opens.</p>
+          <div class="access__direct">
+            <a href="mailto:desk@monarchmarkets.example">desk@monarchmarkets.example</a>
+          </div>
+        </div>
+        <form class="form" data-form>
+          <label>Name<input type="text" name="name" autocomplete="name" required /></label>
+          <label>Work email<input type="email" name="email" autocomplete="email" required /></label>
+          <label>What do you watch?<textarea name="watch" rows="3" placeholder="e.g. NGX 30, banking, cement"></textarea></label>
+          <button class="btn" type="submit">Request an invite</button>
+          <p class="form__status" data-form-status role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__grid">
+      <div>
+        <span class="brand__name">MONARCH</span>
+        <p>Market intelligence for African equities.</p>
+      </div>
+      <div><h3>Product</h3><a href="#desk">The desk</a><a href="#features">Features</a><a href="#pricing">Pricing</a></div>
+      <div><h3>Company</h3><a href="#security">Security</a><a href="#access">Access</a><a href="#top">Status</a></div>
+      <div><h3>Legal</h3><a href="#top">Terms</a><a href="#top">Privacy</a><a href="#top">Disclosures</a></div>
+    </div>
+    <div class="wrap foot__base">
+      <span>© <span data-year></span> Monarch Markets</span>
+      <span>Not investment advice. Data delayed.</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
