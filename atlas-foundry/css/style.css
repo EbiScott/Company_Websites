@@ -10,9 +10,9 @@
   --line-soft: rgba(18, 35, 59, 0.1);
   --grid: rgba(31, 111, 235, 0.08);
   --grid-major: rgba(31, 111, 235, 0.16);
-  --serif: "Fraunces", Georgia, serif;
-  --sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
-  --mono: "DM Mono", ui-monospace, monospace;
+  --serif: "Lora", Georgia, serif;
+  --sans: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+  --mono: "Space Mono", ui-monospace, monospace;
   --max: 1240px;
   --pad: clamp(1.2rem, 5vw, 5rem);
 }
@@ -85,7 +85,6 @@ ul { padding: 0; list-style: none; }
 
 /* Hero */
 .hero {
-  margin-top: 72px;
   position: relative; padding: clamp(2.6rem, 7vw, 6rem) var(--pad) clamp(2rem, 5vw, 4rem);
   border-bottom: 1px solid var(--ink); overflow: hidden;
 }
