@@ -57,6 +57,15 @@ ul { padding: 0; list-style: none; }
 .inkblue { color: var(--blue); text-shadow: 4px 4px 0 rgba(255,77,141,0.55); }
 .pink { color: var(--pink); margin-left: clamp(0.5rem, 5vw, 4rem); text-shadow: -4px 3px 0 rgba(39,51,208,0.45); }
 .outline { color: transparent; -webkit-text-stroke: 2px var(--ink); margin-left: clamp(0.5rem, 8vw, 7rem); }
+.hero__headline {
+  max-width: 34ch;
+  margin-top: 1.6rem;
+  color: var(--ink);
+  font-size: clamp(1.05rem, 2.1vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
 .hero__lede { max-width: 44ch; margin: 1.6rem 0 1.4rem; font-size: clamp(1rem, 1.7vw, 1.18rem); color: #3d3a35; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 0.7rem; }
 .btn { display: inline-flex; align-items: center; justify-content: center; background: var(--blue); color: var(--paper); border: 2px solid var(--blue); padding: 0.72rem 1rem; font-size: 0.66rem; font-weight: 600; letter-spacing: 0.13em; text-transform: uppercase; cursor: pointer; }
