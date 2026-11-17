@@ -1,0 +1,9 @@
+{
+  "name": "company-websites",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "edit": "node editor/server.mjs",
+    "check": "node tools/check.mjs"
+  }
+}
