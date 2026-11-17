@@ -10,9 +10,9 @@
   --line-soft: rgba(18, 35, 59, 0.1);
   --grid: rgba(31, 111, 235, 0.08);
   --grid-major: rgba(31, 111, 235, 0.16);
-  --serif: "Instrument Serif", Georgia, serif;
-  --sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, monospace;
+  --serif: "Fraunces", Georgia, serif;
+  --sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --mono: "DM Mono", ui-monospace, monospace;
   --max: 1240px;
   --pad: clamp(1.2rem, 5vw, 5rem);
 }
@@ -83,22 +83,9 @@ ul { padding: 0; list-style: none; }
 .head__cta:hover { background: var(--blue); color: #fff; }
 .menu, .menu-panel { display: none; }
 
-/* Marquee */
-.marquee {
-  margin-top: 72px; overflow: hidden;
-  border-bottom: 1px solid var(--ink);
-  background: rgba(236, 238, 242, 0.86);
-}
-.marquee__inner { display: flex; width: max-content; white-space: nowrap; animation: slide 26s linear infinite; }
-.marquee__inner span {
-  font-family: var(--mono); font-size: 0.58rem; font-weight: 500;
-  letter-spacing: 0.18em; color: var(--blue);
-  padding: 0.42rem 1.4rem; border-right: 1px solid var(--line);
-}
-@keyframes slide { to { transform: translateX(-33.333%); } }
-
 /* Hero */
 .hero {
+  margin-top: 72px;
   position: relative; padding: clamp(2.6rem, 7vw, 6rem) var(--pad) clamp(2rem, 5vw, 4rem);
   border-bottom: 1px solid var(--ink); overflow: hidden;
 }
@@ -309,7 +296,6 @@ h2 {
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .marquee__inner { animation: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
 
