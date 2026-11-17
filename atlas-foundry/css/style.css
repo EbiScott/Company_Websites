@@ -103,12 +103,13 @@ ul { padding: 0; list-style: none; }
   content: ""; display: inline-block; width: 34px; height: 1px; background: var(--red);
 }
 .hero h1 {
-  position: relative; display: flex; flex-direction: column;
+  position: relative; display: flex; flex-direction: row; align-items: baseline;
+  gap: 0.2em;
   font-family: var(--serif); font-weight: 400;
-  font-size: clamp(3rem, 10vw, 8.6rem); line-height: 0.9;
+  font-size: clamp(2.6rem, 9.6vw, 8.4rem); line-height: 0.9;
   letter-spacing: -0.025em; margin: 1.2rem 0 1.4rem;
 }
-.hero h1 .accent { color: var(--blue); margin-left: clamp(0.5rem, 7vw, 7rem); }
+.hero h1 .accent { color: var(--blue); margin-left: 0; }
 .hero__headline {
   font-family: var(--serif);
   font-size: clamp(1.5rem, 3vw, 2.4rem);
