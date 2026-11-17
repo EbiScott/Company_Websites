@@ -11,7 +11,7 @@
   --grid: rgba(31, 111, 235, 0.08);
   --grid-major: rgba(31, 111, 235, 0.16);
   --serif: "Lora", Georgia, serif;
-  --sans: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+  --sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
   --mono: "Space Mono", ui-monospace, monospace;
   --max: 1240px;
   --pad: clamp(1.2rem, 5vw, 5rem);

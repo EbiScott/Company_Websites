@@ -10,7 +10,7 @@
   --green: #5dd39e;
   --red: #ff6b6b;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
-  --sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --sans: "Familjen Grotesk", ui-sans-serif, system-ui, sans-serif;
   --max: 1240px;
   --pad: clamp(1.2rem, 5vw, 5rem);
 }
