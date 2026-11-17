@@ -14,7 +14,31 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-<main id="main">
+  <header class="site-head" data-head>
+    <a class="brand" href="#top" aria-label="Nocturne Hotel, home">
+      <span class="brand__moon" aria-hidden="true"></span>
+      <span class="brand__word">Nocturne</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#story">The hotel</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#hours">After dark</a>
+      <a href="#contact">Book</a>
+    </nav>
+    <a class="head-cta" href="#contact">Reserve</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span>
+      <span class="sr-only">Open menu</span>
+    </button>
+    <div class="mobile-nav" id="mobile-nav" hidden>
+      <a href="#story">The hotel</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#hours">After dark</a>
+      <a href="#contact">Book</a>
+    </div>
+  </header>
+
+  <main id="main">
     <section class="hero" id="top">
       <div class="hero__sky" aria-hidden="true">
         <span class="hero__moon"></span>
