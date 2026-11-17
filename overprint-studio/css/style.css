@@ -66,6 +66,12 @@ ul { padding: 0; list-style: none; }
   line-height: 1.2;
   letter-spacing: 0.01em;
 }
+.hero--center .hero__inner { text-align: center; }
+.hero--center h1 { align-items: center; }
+.hero--center .pink { margin-left: 0; }
+.hero--center .hero__headline,
+.hero--center .hero__lede { margin-left: auto; margin-right: auto; }
+.hero--center .hero__actions { justify-content: center; }
 .hero__lede { max-width: 44ch; margin: 1.6rem 0 1.4rem; font-size: clamp(1rem, 1.7vw, 1.18rem); color: #3d3a35; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 0.7rem; }
 .btn { display: inline-flex; align-items: center; justify-content: center; background: var(--blue); color: var(--paper); border: 2px solid var(--blue); padding: 0.72rem 1rem; font-size: 0.66rem; font-weight: 600; letter-spacing: 0.13em; text-transform: uppercase; cursor: pointer; }
