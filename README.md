@@ -28,6 +28,25 @@ npx serve .
 
 Then visit `/nocturne-hotel/`, `/herbarium-house/`, and so on.
 
+## Edit all six in one place
+
+```bash
+npm run edit
+```
+
+This opens a local editor at http://localhost:4331. Pick a site, turn on Edit
+mode, change the copy directly in the preview, and upload replacement pictures
+into the marked image slots. Save writes the site's `index.html`; Publish
+commits the site folders and pushes to GitHub.
+
+The editor is local-only and is never deployed.
+
+## Check
+
+```bash
+npm run check
+```
+
 ## Deploy on Vercel
 
 One repository is enough. Create six Vercel projects from this same repo and set
@@ -52,11 +71,15 @@ root. Each site then gets its own URL.
   index.html
   css/style.css
   js/main.js
+  images/            optional pictures added through the editor
+editor/              local editor (never deployed)
+tools/check.mjs      repository check
 ```
 
 ## Notes
 
-- No external images. The visuals are CSS, inline SVG, and type.
+- No external images by default. The built-in visuals are CSS, inline SVG, and
+  type; optional photographs can be added through the editor.
 - Fonts load from Google Fonts with system fallbacks.
 - Each site includes a skip link, keyboard focus styles, reduced-motion
   handling, and a mobile menu.
