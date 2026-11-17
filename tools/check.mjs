@@ -4,8 +4,9 @@ import { fileURLToPath } from "node:url";
 import { execFileSync } from "node:child_process";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+const NOT_A_SITE = new Set(["editor", "tools", "node_modules", ".git"]);
 const sites = readdirSync(root, { withFileTypes: true })
-  .filter((entry) => entry.isDirectory() && existsSync(join(root, entry.name, "index.html")))
+  .filter((entry) => entry.isDirectory() && !NOT_A_SITE.has(entry.name) && existsSync(join(root, entry.name, "index.html")))
   .map((entry) => entry.name)
   .sort();
 
@@ -31,7 +32,10 @@ function checkSite(site) {
     ["css/style.css", "stylesheet link"],
     ["js/main.js", "script tag"],
     ["data-year", "dynamic year"],
+    ["data-edit-image", "replaceable image slot"],
   ];
+
+  if (!html.includes("data-edit-image")) errors.push(`${site}: no replaceable image slot`);
 
   for (const [needle, label] of required) {
     if (!html.includes(needle)) errors.push(`${site}: missing ${label}`);
@@ -58,6 +62,9 @@ function checkSite(site) {
     if (!css.includes("@media")) errors.push(`${site}: no responsive @media rules`);
     if (!css.includes("[hidden]")) {
       errors.push(`${site}: missing [hidden] rule (mobile menu will stay open)`);
+    }
+    if (!css.includes(".art-img")) {
+      errors.push(`${site}: missing .art-img rule for uploaded pictures`);
     }
     if (!/\[hidden\]\s*\{[^}]*display:\s*none\s*!important/.test(css)) {
       errors.push(`${site}: [hidden] rule must set display: none !important`);
