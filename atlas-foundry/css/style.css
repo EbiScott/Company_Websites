@@ -108,10 +108,9 @@ ul { padding: 0; list-style: none; }
   font-size: clamp(3rem, 10vw, 8.6rem); line-height: 0.9;
   letter-spacing: -0.025em; margin: 1.2rem 0 1.4rem;
 }
-.hero h1 .accent { color: var(--blue); font-style: italic; margin-left: clamp(0.5rem, 7vw, 7rem); }
+.hero h1 .accent { color: var(--blue); margin-left: clamp(0.5rem, 7vw, 7rem); }
 .hero__headline {
   font-family: var(--serif);
-  font-style: italic;
   font-size: clamp(1.5rem, 3vw, 2.4rem);
   line-height: 1.1;
   color: var(--blue);

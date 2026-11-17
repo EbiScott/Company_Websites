@@ -127,7 +127,7 @@ ul { padding: 0; list-style: none; }
   letter-spacing: -0.03em;
   max-width: 11ch;
 }
-.hero h1 em { color: var(--amber); font-style: italic; }
+.hero h1 .accent { color: var(--amber); }
 .hero__headline {
   font-family: var(--serif);
   font-size: clamp(1.5rem, 3vw, 2.4rem);

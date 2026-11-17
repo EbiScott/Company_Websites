@@ -91,13 +91,14 @@ ul { padding: 0; list-style: none; }
   margin: 1rem 0 1.4rem;
   max-width: 12ch;
 }
-.hero h1 em { color: var(--rust); font-style: italic; }
+.hero h1 .accent { color: var(--rust); }
 .hero__headline {
-  font-family: var(--serif);
-  font-size: clamp(1.5rem, 3vw, 2.4rem);
-  line-height: 1.1;
+  font-family: var(--sans);
+  font-size: clamp(1.35rem, 2.8vw, 2.1rem);
+  font-weight: 500;
+  line-height: 1.15;
   color: var(--rust);
-  max-width: 26ch;
+  max-width: 28ch;
   margin-top: 0.6rem;
 }
 .hero__lede { max-width: 46ch; color: var(--muted); font-size: clamp(1rem, 1.7vw, 1.16rem); }
