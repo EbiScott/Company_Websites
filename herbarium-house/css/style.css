@@ -85,11 +85,11 @@ ul { padding: 0; list-style: none; }
 .hero h1 {
   font-family: var(--serif);
   font-weight: 400;
-  font-size: clamp(3.1rem, 9.5vw, 8rem);
+  font-size: clamp(2.6rem, 8.5vw, 7.4rem);
   line-height: 0.92;
   letter-spacing: -0.025em;
   margin: 1rem 0 1.4rem;
-  max-width: 12ch;
+  max-width: none;
 }
 .hero h1 .accent { color: var(--rust); }
 .hero__headline {
