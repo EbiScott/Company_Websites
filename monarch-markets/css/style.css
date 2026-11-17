@@ -184,3 +184,8 @@ h2 { font-size: clamp(2rem, 4.6vw, 3.8rem); line-height: 0.98; letter-spacing: -
   .ticker { animation: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+/* The hidden attribute must win over the mobile panel display rules. */
+[hidden] {
+  display: none !important;
+}

@@ -313,3 +313,8 @@ h2 {
   .reveal { opacity: 1; transform: none; transition: none; }
   .btn:hover { transform: none; }
 }
+
+/* The hidden attribute must win over the mobile panel display rules. */
+[hidden] {
+  display: none !important;
+}

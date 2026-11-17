@@ -158,3 +158,8 @@ ul { padding: 0; list-style: none; }
   .ticker__inner { animation: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+/* The hidden attribute must win over the mobile panel display rules. */
+[hidden] {
+  display: none !important;
+}

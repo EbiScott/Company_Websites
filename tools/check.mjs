@@ -56,6 +56,12 @@ function checkSite(site) {
     const close = (css.match(/}/g) || []).length;
     if (open !== close) errors.push(`${site}: unbalanced CSS braces (${open} open, ${close} close)`);
     if (!css.includes("@media")) errors.push(`${site}: no responsive @media rules`);
+    if (!css.includes("[hidden]")) {
+      errors.push(`${site}: missing [hidden] rule (mobile menu will stay open)`);
+    }
+    if (!/\[hidden\]\s*\{[^}]*display:\s*none\s*!important/.test(css)) {
+      errors.push(`${site}: [hidden] rule must set display: none !important`);
+    }
   }
 
   if (existsSync(jsPath)) {

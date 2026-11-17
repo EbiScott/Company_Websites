@@ -170,3 +170,8 @@ h2 { font-family: var(--display); font-weight: 800; font-size: clamp(2.6rem, 6vw
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+/* The hidden attribute must win over the mobile panel display rules. */
+[hidden] {
+  display: none !important;
+}
