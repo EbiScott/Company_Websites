@@ -122,10 +122,10 @@ ul { padding: 0; list-style: none; }
 .hero h1 {
   font-family: var(--serif);
   font-weight: 400;
-  font-size: clamp(3.3rem, 10.5vw, 9rem);
+  font-size: clamp(2.8rem, 9.5vw, 8rem);
   line-height: 0.92;
   letter-spacing: -0.03em;
-  max-width: 11ch;
+  max-width: none;
 }
 .hero h1 .accent { color: var(--amber); }
 .hero__headline {
