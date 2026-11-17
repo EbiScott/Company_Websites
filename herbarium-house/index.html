@@ -14,7 +14,37 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-<main id="main">
+  <header class="head" data-head>
+    <a class="brand" href="#top">
+      <span class="brand__leaf" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M20 36V12" />
+          <path d="M20 23C8 23 6 15 6 6c11 0 14 8 14 17Z" />
+          <path d="M20 17c12 0 14-8 14-17-11 0-14 8-14 17Z" />
+        </svg>
+      </span>
+      <span class="brand__name">Herbarium <i>House</i></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#house">The house</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#spa">Spa</a>
+      <a href="#table">Table</a>
+    </nav>
+    <a class="head__cta" href="#stay">Stay with us</a>
+    <button class="menu" type="button" aria-expanded="false" aria-controls="menu-panel">
+      <span></span><span></span><span class="sr-only">Open menu</span>
+    </button>
+    <nav class="menu-panel" id="menu-panel" hidden aria-label="Mobile">
+      <a href="#house">The house</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#spa">Spa</a>
+      <a href="#table">Table</a>
+      <a href="#stay">Stay with us</a>
+    </nav>
+  </header>
+
+  <main id="main">
     <section class="hero" id="top">
       <div class="hero__drawing" aria-hidden="true">
         <svg viewBox="0 0 520 620" fill="none" stroke="currentColor" stroke-width="1.2">

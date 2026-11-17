@@ -14,7 +14,36 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-<main id="main">
+  <header class="head" data-head>
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 28 28" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 22 9 12l6 5 7-10 4 4" />
+          <path d="M3 25h22" />
+        </svg>
+      </span>
+      <span class="brand__name">MONARCH</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#desk">The desk</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#security">Security</a>
+    </nav>
+    <a class="head__cta" href="#access">Request access</a>
+    <button class="menu" type="button" aria-expanded="false" aria-controls="menu-panel">
+      <span></span><span></span><span></span><span class="sr-only">Menu</span>
+    </button>
+    <nav class="menu-panel" id="menu-panel" hidden aria-label="Mobile">
+      <a href="#desk">The desk</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#security">Security</a>
+      <a href="#access">Request access</a>
+    </nav>
+  </header>
+
+  <main id="main">
     <section class="hero" id="top">
       <div class="hero__grid" aria-hidden="true"></div>
       <div class="hero__inner">

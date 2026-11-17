@@ -40,7 +40,7 @@ ul { padding: 0; list-style: none; }
 .menu, .menu-panel { display: none; }
 
 /* Ticker */
-.ticker { overflow: hidden; border-bottom: 1px solid var(--line); background: var(--paper-2); }
+.ticker { margin-top: 92px; overflow: hidden; border-bottom: 1px solid var(--line); background: var(--paper-2); }
 .ticker__inner { display: flex; width: max-content; gap: 2.2rem; white-space: nowrap; padding: 0.45rem 1rem; font-size: 0.6rem; letter-spacing: 0.06em; animation: tick 26s linear infinite; }
 .ticker__inner b { font-weight: 700; }
 .ticker__inner i { font-style: normal; }
