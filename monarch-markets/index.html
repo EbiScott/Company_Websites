@@ -31,58 +31,43 @@
       </div>
 
       <div class="console" id="desk" aria-label="Example Monarch market desk">
-            <img class="art-img" data-edit-image="monarch-desk" alt="" hidden />
+            <img class="art-img" data-edit-image="monarch-desk" src="img/desk.jpg" alt="" decoding="async" />
         <div class="console__bar">
           <span class="console__dot"></span><span class="console__dot"></span><span class="console__dot"></span>
           <span class="console__title">MONARCH / WATCHLIST</span>
-          <span class="console__live">LIVE / DELAYED</span>
+          <span class="console__live">DELAYED / 20 MIN</span>
         </div>
-        <div class="console__ticker" aria-hidden="true">
-          <div class="ticker" id="ticker">
-            <span>DANGCEM  <b class="up">+1.82%</b></span>
-            <span>MTNN  <b class="down">-0.64%</b></span>
-            <span>GTCO  <b class="up">+0.41%</b></span>
-            <span>ZENITH  <b class="up">+1.06%</b></span>
-            <span>BUACEMENT  <b class="down">-1.10%</b></span>
-            <span>SEPLAT  <b class="up">+2.34%</b></span>
-          </div>
+        <div class="console__ticker" aria-label="Market ticker">
+          <div class="ticker" id="ticker"><span>Loading market data…</span></div>
         </div>
         <div class="console__body">
-          <div class="chart">
+          <div class="chart" aria-live="polite">
             <div class="chart__head">
               <div>
                 <span class="chart__sym">NGX / ALL SHARE</span>
-                <strong>98,412.06</strong>
-                <span class="up">+1.24% today</span>
+                <strong id="asi-value">—</strong>
+                <span class="chart__change" id="asi-change">Loading…</span>
               </div>
-              <div class="chart__range"><span>1D</span><span class="is-on">1W</span><span>1M</span><span>1Y</span></div>
+              <div class="chart__range"><span class="is-on">1D</span></div>
             </div>
-            <svg viewBox="0 0 620 220" class="chart__svg" role="img" aria-label="Illustrative market chart">
-              <defs>
-                <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#ffb000" stop-opacity="0.28" />
-                  <stop offset="1" stop-color="#ffb000" stop-opacity="0" />
-                </linearGradient>
-              </defs>
-              <g stroke="#1e2a33" stroke-width="1">
-                <line x1="0" y1="40" x2="620" y2="40" /><line x1="0" y1="90" x2="620" y2="90" />
-                <line x1="0" y1="140" x2="620" y2="140" /><line x1="0" y1="190" x2="620" y2="190" />
-              </g>
-              <path d="M0 168 60 154 120 160 180 132 240 140 300 108 360 118 420 84 480 92 540 58 620 44V220H0Z" fill="url(#fill)" />
-              <path d="M0 168 60 154 120 160 180 132 240 140 300 108 360 118 420 84 480 92 540 58 620 44" fill="none" stroke="#ffb000" stroke-width="2.5" />
-            </svg>
+            <div class="breadth">
+              <div class="breadth__bar" aria-hidden="true">
+                <span class="breadth__adv" id="breadth-adv"></span>
+                <span class="breadth__flat" id="breadth-flat"></span>
+                <span class="breadth__dec" id="breadth-dec"></span>
+              </div>
+              <div class="breadth__legend">
+                <span><i class="breadth__dot breadth__dot--adv"></i><b id="breadth-adv-count">—</b> up</span>
+                <span><i class="breadth__dot breadth__dot--flat"></i><b id="breadth-flat-count">—</b> flat</span>
+                <span><i class="breadth__dot breadth__dot--dec"></i><b id="breadth-dec-count">—</b> down</span>
+              </div>
+            </div>
+            <p class="chart__note" id="chart-note">Source: NGN Market. Prices refresh every 20 minutes during trading hours.</p>
           </div>
           <div class="watch">
             <div class="watch__head"><span>WATCHLIST</span><span>CHG</span></div>
-            <ul>
-              <li><span>DANGCEM</span><span class="up">+1.82%</span></li>
-              <li><span>MTNN</span><span class="down">-0.64%</span></li>
-              <li><span>GTCO</span><span class="up">+0.41%</span></li>
-              <li><span>ZENITH</span><span class="up">+1.06%</span></li>
-              <li><span>BUACEMENT</span><span class="down">-1.10%</span></li>
-              <li><span>SEPLAT</span><span class="up">+2.34%</span></li>
-            </ul>
-            <p class="watch__note">Illustrative data. Not investment advice.</p>
+            <ul id="watchlist"><li><span>Loading…</span><span>—</span></li></ul>
+            <p class="watch__note" id="watch-note">Delayed quotes. Not investment advice.</p>
           </div>
         </div>
       </div>
@@ -132,26 +117,27 @@
           <p class="kicker">02 / The data</p>
           <h2>What you are looking at.</h2>
           <p class="data__copy">
-            Quotes are delayed by at least thirty minutes and sourced from a
-            licensed provider. We do not connect to a broker and we do not place
-            orders. Monarch is context for your own decisions.
+            Prices update every 20 minutes while the market is open and show the
+            last close after hours. We do not connect to a broker and we do not
+            place orders. Monarch is context for your own decisions.
           </p>
           <ul class="data__list">
             <li><span>Coverage</span><span>NGX listed equities</span></li>
-            <li><span>Delay</span><span>30 minutes minimum</span></li>
-            <li><span>History</span><span>Accumulated from daily polls</span></li>
+            <li><span>Refresh</span><span>20 min in market hours</span></li>
+            <li><span>Source</span><span>NGN Market</span></li>
             <li><span>Broker link</span><span>None, by design</span></li>
           </ul>
         </div>
-        <div class="data__card" aria-hidden="true">
-          <div class="data__row"><span>OPEN</span><span>97,204.18</span></div>
-          <div class="data__row"><span>HIGH</span><span>98,640.92</span></div>
-          <div class="data__row"><span>LOW</span><span>97,102.44</span></div>
-          <div class="data__row"><span>VOLUME</span><span>421.8M</span></div>
-          <div class="data__row"><span>ADVANCERS</span><span class="up">28</span></div>
-          <div class="data__row"><span>DECLINERS</span><span class="down">11</span></div>
-          <div class="data__row"><span>UNCHANGED</span><span>7</span></div>
-          <p class="data__note">Illustrative snapshot. Values change.</p>
+        <div class="data__card">
+          <div class="data__row"><span>ASI</span><span id="stat-asi">—</span></div>
+          <div class="data__row"><span>CHANGE</span><span id="stat-change">—</span></div>
+          <div class="data__row"><span>YTD</span><span id="stat-ytd">—</span></div>
+          <div class="data__row"><span>VOLUME</span><span id="stat-volume">—</span></div>
+          <div class="data__row"><span>VALUE</span><span id="stat-value">—</span></div>
+          <div class="data__row"><span>DEALS</span><span id="stat-deals">—</span></div>
+          <div class="data__row"><span>ADVANCERS</span><span class="up" id="stat-adv">—</span></div>
+          <div class="data__row"><span>DECLINERS</span><span class="down" id="stat-dec">—</span></div>
+          <p class="data__note">Snapshot from NGN Market. Values change during trading.</p>
         </div>
       </div>
     </section>
